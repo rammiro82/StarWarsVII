@@ -16,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-        splitViewController.delegate = self
+
+        tddPaPobres()
+        
         return true
     }
 
@@ -55,6 +54,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             return true
         }
         return false
+    }
+    
+    func tddPaPobres(){
+        
+        
+        if let image = UIImage(named: "vader.jpg"),
+            soundFileURL = NSBundle.mainBundle().URLForResource("vader", withExtension: "caf"),
+            soundFile = NSData(contentsOfURL: soundFileURL),
+            wikiURL = NSURL(string: "https://en.wikipedia.org/wiki/Darth_Vader")
+        {
+            
+            let vader = ForceSensitive(sithWithFirstName: "Anakin"
+                , lastName: "Skywalker", alias: "Darth Vader", soundData: soundFile, photo: image, url: wikiURL, midichlorians: 15_000)
+            
+            print(vader)
+            
+            
+            
+        }
     }
 
 }
