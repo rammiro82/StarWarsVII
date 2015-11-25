@@ -73,6 +73,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             
             
         }
+        
+        // Probar parseado de JSON e inicialización de objetos del modelo.
+        do{
+            if let url = NSBundle.mainBundle().URLForResource("regularCharacters.json"),
+                data = NSData(contentsOfURL: url),
+                characters = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONArray
+            {
+                // Ver un JSONObject que esté dentro del JSONArray
+                let jabbaJSON = characters[4]
+                do{
+                    let strictJabba = try decode(starWarsCharacter: jabbaJSON)
+                    let jabba = StarWarsCharacter(strictStarWarsCharacter:  strictJabba)
+                    
+                    print("Menudo vesitido más bonito \(jabba)")
+                }catch{
+                    print("LA cagamos al extraer jabba")
+                }
+                
+                let strictChars = decode(starWarsCharacters: characters)
+                
+                let u = StarWarsUniverse(characters: strictChars)
+                print(u)
+            }
+        }catch{
+            print("La cagamos")
+        }
+        
+        
+        
+        
+        
+        
+        
     }
 
 }

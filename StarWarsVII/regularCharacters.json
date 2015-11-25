@@ -26,13 +26,12 @@
   "affiliation"  : "Rebel Alliance",
   "url"          : "https://en.wikipedia.org/wiki/R2-D2",
   },
-
   {
   "firstName"    : null,
   "lastName"     : null,
   "alias"        : "Chewbacca",
-  "soundFile"    : "chewie.jpg",
-  "imageFile"    : "chewie.caf",
+  "soundFile"    : "chewie.caf",
+  "imageFile"    : "chewie.jpg",
   "affiliation"  : "Rebel Alliance",
   "url"          : "https://en.wikipedia.org/wiki/Chewbacca",
   },
@@ -63,4 +62,4 @@
   "affiliation"  : "Galactic Empire",
   "url"          : "http://starwars.wikia.com/wiki/Conan_Antonio_Motti/Canon",
   }
-  ]
+]
