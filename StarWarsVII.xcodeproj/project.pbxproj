@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28AA3E811BFFD30100681F06 /* JSONProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AA3E801BFFD30100681F06 /* JSONProcessing.swift */; };
+		28AA3E841BFFDE8C00681F06 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AA3E831BFFDE8C00681F06 /* FoundationExtensions.swift */; };
 		28AADD131BFE5D9500DE19DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AADD121BFE5D9500DE19DE /* AppDelegate.swift */; };
 		28AADD151BFE5D9500DE19DE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AADD141BFE5D9500DE19DE /* MasterViewController.swift */; };
 		28AADD171BFE5D9500DE19DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AADD161BFE5D9500DE19DE /* DetailViewController.swift */; };
@@ -47,6 +49,7 @@
 		28AADD771BFE90E400DE19DE /* vader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD591BFE90E400DE19DE /* vader.jpg */; };
 		28AADD781BFE90E400DE19DE /* yoda.caf in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD5A1BFE90E400DE19DE /* yoda.caf */; };
 		28AADD791BFE90E400DE19DE /* yoda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD5B1BFE90E400DE19DE /* yoda.jpg */; };
+		28B013CF1C04FC5C0029D898 /* StarWarsUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B013CE1C04FC5C0029D898 /* StarWarsUniverse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28AA3E801BFFD30100681F06 /* JSONProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONProcessing.swift; sourceTree = "<group>"; };
+		28AA3E831BFFDE8C00681F06 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		28AADD0F1BFE5D9500DE19DE /* StarWarsVII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsVII.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AADD121BFE5D9500DE19DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28AADD141BFE5D9500DE19DE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +110,8 @@
 		28AADD591BFE90E400DE19DE /* vader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vader.jpg; sourceTree = "<group>"; };
 		28AADD5A1BFE90E400DE19DE /* yoda.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoda.caf; sourceTree = "<group>"; };
 		28AADD5B1BFE90E400DE19DE /* yoda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoda.jpg; sourceTree = "<group>"; };
+		28B013CE1C04FC5C0029D898 /* StarWarsUniverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsUniverse.swift; sourceTree = "<group>"; };
+		28B013D21C05291F0029D898 /* deberes */ = {isa = PBXFileReference; lastKnownFileType = text; path = deberes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +132,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28AA3E821BFFDE2A00681F06 /* Fraimwork */ = {
+			isa = PBXGroup;
+			children = (
+				28AA3E831BFFDE8C00681F06 /* FoundationExtensions.swift */,
+			);
+			name = Fraimwork;
+			sourceTree = "<group>";
+		};
 		28AADD061BFE5D9500DE19DE = {
 			isa = PBXGroup;
 			children = (
+				28B013D21C05291F0029D898 /* deberes */,
 				28AADD111BFE5D9500DE19DE /* StarWarsVII */,
 				28AADD281BFE5D9500DE19DE /* StarWarsVIITests */,
 				28AADD101BFE5D9500DE19DE /* Products */,
@@ -146,6 +162,7 @@
 		28AADD111BFE5D9500DE19DE /* StarWarsVII */ = {
 			isa = PBXGroup;
 			children = (
+				28AA3E821BFFDE2A00681F06 /* Fraimwork */,
 				28AADD341BFE5E7800DE19DE /* App */,
 				28AADD381BFE65BA00DE19DE /* Misc.playground */,
 			);
@@ -183,6 +200,8 @@
 				28AADD361BFE60E600DE19DE /* StarWarsCharacter.swift */,
 				28AADD391BFE7CDE00DE19DE /* Affiliations.swift */,
 				28AADD3B1BFE89A900DE19DE /* ForceSensitive.swift */,
+				28AA3E801BFFD30100681F06 /* JSONProcessing.swift */,
+				28B013CE1C04FC5C0029D898 /* StarWarsUniverse.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -359,7 +378,10 @@
 				28AADD151BFE5D9500DE19DE /* MasterViewController.swift in Sources */,
 				28AADD371BFE60E600DE19DE /* StarWarsCharacter.swift in Sources */,
 				28AADD3A1BFE7CDE00DE19DE /* Affiliations.swift in Sources */,
+				28AA3E841BFFDE8C00681F06 /* FoundationExtensions.swift in Sources */,
 				28AADD3C1BFE89A900DE19DE /* ForceSensitive.swift in Sources */,
+				28AA3E811BFFD30100681F06 /* JSONProcessing.swift in Sources */,
+				28B013CF1C04FC5C0029D898 /* StarWarsUniverse.swift in Sources */,
 				28AADD131BFE5D9500DE19DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
