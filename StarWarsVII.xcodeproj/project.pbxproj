@@ -12,7 +12,6 @@
 		28AADD131BFE5D9500DE19DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AADD121BFE5D9500DE19DE /* AppDelegate.swift */; };
 		28AADD151BFE5D9500DE19DE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AADD141BFE5D9500DE19DE /* MasterViewController.swift */; };
 		28AADD171BFE5D9500DE19DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AADD161BFE5D9500DE19DE /* DetailViewController.swift */; };
-		28AADD1A1BFE5D9500DE19DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD181BFE5D9500DE19DE /* Main.storyboard */; };
 		28AADD1C1BFE5D9500DE19DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD1B1BFE5D9500DE19DE /* Assets.xcassets */; };
 		28AADD1F1BFE5D9500DE19DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD1D1BFE5D9500DE19DE /* LaunchScreen.storyboard */; };
 		28AADD2A1BFE5D9500DE19DE /* StarWarsVIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AADD291BFE5D9500DE19DE /* StarWarsVIITests.swift */; };
@@ -50,6 +49,8 @@
 		28AADD781BFE90E400DE19DE /* yoda.caf in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD5A1BFE90E400DE19DE /* yoda.caf */; };
 		28AADD791BFE90E400DE19DE /* yoda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28AADD5B1BFE90E400DE19DE /* yoda.jpg */; };
 		28B013CF1C04FC5C0029D898 /* StarWarsUniverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B013CE1C04FC5C0029D898 /* StarWarsUniverse.swift */; };
+		28F47FAA1C07A53C003A3C65 /* StarWarsUniverseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F47FA91C07A53C003A3C65 /* StarWarsUniverseViewController.swift */; };
+		28F47FAD1C07A5CC003A3C65 /* EpisodeVII.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F47FAC1C07A5CC003A3C65 /* EpisodeVII.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +70,6 @@
 		28AADD121BFE5D9500DE19DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28AADD141BFE5D9500DE19DE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		28AADD161BFE5D9500DE19DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		28AADD191BFE5D9500DE19DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28AADD1B1BFE5D9500DE19DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28AADD1E1BFE5D9500DE19DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28AADD201BFE5D9500DE19DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +112,8 @@
 		28AADD5B1BFE90E400DE19DE /* yoda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoda.jpg; sourceTree = "<group>"; };
 		28B013CE1C04FC5C0029D898 /* StarWarsUniverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsUniverse.swift; sourceTree = "<group>"; };
 		28B013D21C05291F0029D898 /* deberes */ = {isa = PBXFileReference; lastKnownFileType = text; path = deberes; sourceTree = "<group>"; };
+		28F47FA91C07A53C003A3C65 /* StarWarsUniverseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarWarsUniverseViewController.swift; sourceTree = "<group>"; };
+		28F47FAC1C07A5CC003A3C65 /* EpisodeVII.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EpisodeVII.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,14 +183,14 @@
 		28AADD341BFE5E7800DE19DE /* App */ = {
 			isa = PBXGroup;
 			children = (
+				28F47FAB1C07A5A5003A3C65 /* StoryBoards */,
+				28F47FA81C07A4E3003A3C65 /* Controllers */,
 				28AADD3D1BFE909000DE19DE /* Resources */,
 				28AADD351BFE609800DE19DE /* Models */,
 				28AADD121BFE5D9500DE19DE /* AppDelegate.swift */,
 				28AADD141BFE5D9500DE19DE /* MasterViewController.swift */,
 				28AADD161BFE5D9500DE19DE /* DetailViewController.swift */,
-				28AADD181BFE5D9500DE19DE /* Main.storyboard */,
 				28AADD1B1BFE5D9500DE19DE /* Assets.xcassets */,
-				28AADD1D1BFE5D9500DE19DE /* LaunchScreen.storyboard */,
 				28AADD201BFE5D9500DE19DE /* Info.plist */,
 			);
 			name = App;
@@ -241,6 +243,23 @@
 				28AADD5B1BFE90E400DE19DE /* yoda.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		28F47FA81C07A4E3003A3C65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28F47FA91C07A53C003A3C65 /* StarWarsUniverseViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		28F47FAB1C07A5A5003A3C65 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				28AADD1D1BFE5D9500DE19DE /* LaunchScreen.storyboard */,
+				28F47FAC1C07A5CC003A3C65 /* EpisodeVII.storyboard */,
+			);
+			name = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,13 +369,13 @@
 				28AADD5E1BFE90E400DE19DE /* chewie.caf in Resources */,
 				28AADD711BFE90E400DE19DE /* r2-d2.caf in Resources */,
 				28AADD6C1BFE90E400DE19DE /* motti.jpg in Resources */,
+				28F47FAD1C07A5CC003A3C65 /* EpisodeVII.storyboard in Resources */,
 				28AADD621BFE90E400DE19DE /* greedo.jpg in Resources */,
 				28AADD611BFE90E400DE19DE /* greedo.caf in Resources */,
 				28AADD761BFE90E400DE19DE /* vader.caf in Resources */,
 				28AADD5F1BFE90E400DE19DE /* chewie.jpg in Resources */,
 				28AADD691BFE90E400DE19DE /* luke.caf in Resources */,
 				28AADD1C1BFE5D9500DE19DE /* Assets.xcassets in Resources */,
-				28AADD1A1BFE5D9500DE19DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +399,7 @@
 				28AADD3A1BFE7CDE00DE19DE /* Affiliations.swift in Sources */,
 				28AA3E841BFFDE8C00681F06 /* FoundationExtensions.swift in Sources */,
 				28AADD3C1BFE89A900DE19DE /* ForceSensitive.swift in Sources */,
+				28F47FAA1C07A53C003A3C65 /* StarWarsUniverseViewController.swift in Sources */,
 				28AA3E811BFFD30100681F06 /* JSONProcessing.swift in Sources */,
 				28B013CF1C04FC5C0029D898 /* StarWarsUniverse.swift in Sources */,
 				28AADD131BFE5D9500DE19DE /* AppDelegate.swift in Sources */,
@@ -405,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		28AADD181BFE5D9500DE19DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28AADD191BFE5D9500DE19DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28AADD1D1BFE5D9500DE19DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

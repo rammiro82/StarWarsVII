@@ -12,12 +12,31 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-
-
+    
+    var model : StarWarsUniverse?
+    var sb : UIStoryboard?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-
-        tddPaPobres()
+        
+        
+        do{
+            //Arranco la App a manubrio
+            if let url = NSBundle.mainBundle().URLForResource("regulaCharacters.json"),
+                data = NSData(contentsOfURL: url),
+                jsons = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONArray{
+                    
+                    model = StarWarsUniverse(characters: decode(starWarsCharacters: jsons))
+            }
+            
+        }catch{
+            print("Error chungo...!")
+        }
+        
+        // crear la interfaz
+        sb = UIStoryboard(name: "EpisodeVII", bundle: nil)
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = sb?.instantiateInitialViewController()
+        window?.makeKeyAndVisible()
         
         return true
     }
