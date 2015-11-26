@@ -10,14 +10,19 @@ import UIKit
 
 class StarWarsUniverseViewController: UITableViewController {
 
+    // definir función que extrae el json de personajes mindundis, y devuelve un array de su representación estricta.
+    //private func decodeJSON() -> [StrictStarWarsCharacter]{
+        // TODO : hacer esta función.
+    //}
+    
+    // Un let al modelo y ya le definimos el valor por defecto.
+    // Se inicializa
+    //let model : StarWarsUniverse = ...
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {

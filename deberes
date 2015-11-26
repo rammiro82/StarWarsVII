@@ -1,5 +1,10 @@
 # Deberes
 
-* Al patearnos arrays, hemos usado bucles for. Hay que probar a usar map.
+* Crear el modelo en StarWarsUniverseVC
+* Crear una propiedad para mantenerlo
+* Usarlo para responder a los mensajes de la tabla
+* EXTRA: Crear el controlador de personaje e implementar el método de didSelect
 
-* 
+    Para esto último, y poder enseñar el controlador de personaje, vais a tener que llamar a una Segue desde código. Mirar en la documentación de UIStoryBoardSegue cómo se hace.
+
+* EXTRA: Hace el controlador de la wikipedia.
